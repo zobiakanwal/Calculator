@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+        <head>
+    <title>Calculator</title>
+            </head>
+
+            <body>
+                <script>
+                alert("You can perform basic mathematic operations using this calculator");
+                var value1 = parseFloat(prompt("Enter the number"));
+                var value2 = parseFloat(prompt("Enter another number"));
+                var sum = value1 + value2;
+                var sub = value1 - value2;
+                var mul = value1 * value1;
+                var div = value1 / value1;
+                var mod = value1 % value1;
+                var operation = prompt("What operation you want me to perform?\nType any of them:\n + -   *   / %");
+                if (operation === "+" ) {
+                    alert("Here is your answer: " + sum);
+                }
+                    else if (operation === "-" ) {
+                        alert("Here is your answer: " + sub);
+                }
+                else if (operation === "*" ) {
+                        alert("Here is your answer: " + mul);
+                }
+                else if (operation === "/" ) {
+                        alert("Here is your answer: " + div);
+                }
+                else if (operation === "%" ) {
+                        alert("Here is your answer: " + mod);
+                }
+            </script>
+            </body>
+
+</html>
