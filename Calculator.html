@@ -7,13 +7,15 @@
             <body>
                 <script>
                 alert("You can perform basic mathematic operations using this calculator");
-                var value1 = parseFloat(prompt("Enter the number"));
-                var value2 = parseFloat(prompt("Enter another number"));
-                var sum = value1 + value2;
-                var sub = value1 - value2;
-                var mul = value1 * value1;
-                var div = value1 / value1;
-                var mod = value1 % value1;
+                var value1 = parseInt(prompt("Enter the number"));
+                var value2 = parseInt(prompt("Enter another number"));
+				
+                if (Number.isInteger(value1) && Number.isInteger(value2)) {               
+				var sum = parseFloat(value1 + value2);
+                var sub = parseFloat(value1 - value2);
+                var mul = parseFloat(value1 * value2);
+                var div = parseFloat(value1 / value2);
+                var mod = parseFloat(value1 % value2);
                 var operation = prompt("What operation you want me to perform?\nType any of them:\n + -   *   / %");
                 if (operation === "+" ) {
                     alert("Here is your answer: " + sum);
@@ -29,6 +31,10 @@
                 }
                 else if (operation === "%" ) {
                         alert("Here is your answer: " + mod);
+                }
+                }
+                else {
+                  alert("Plz enter numerical values i.e. Integer values");
                 }
             </script>
             </body>
